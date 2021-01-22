@@ -1,0 +1,21 @@
+{
+  // "$schema": "https://json.schemastore.org/tsconfig",
+  // "display": "Node 14",
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "es2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["pages/**/*", "src/**/*"],
+  "exclude": ["node_modules"]
+}
