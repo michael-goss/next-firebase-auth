@@ -1,5 +1,7 @@
 # Next.js App using Firebase Authentication with React Context API
 
+#### TechStack: Next.js, React, Firebase Authentication, Styled Components
+
 ## Step 1: Create Next.js App from starter template
 
 ```zsh
