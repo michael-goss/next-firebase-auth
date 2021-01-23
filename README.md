@@ -208,6 +208,6 @@ return (
 
 In `/src/authContext.tsx` user state is initialized with value `undefined` in order to distinguish three different states:
 
-1. `undefined`: user state initialized _and_ `app.auth().onAuthStateChanged(setUser)` hasn't finished after component's first render. `undefined` in this situation signals that we don't know whether the user is signed in or not. This case needs to be covered where user context is used, because otherwise weird state changes will be visible, when user is already signed in upon first render
+1. `undefined`: user state initialized <ins>and</ins> `app.auth().onAuthStateChanged(setUser)` hasn't finished after component's first render. `undefined` in this situation signals that we don't know whether the user is signed in or not. This case needs to be covered where user context is used, because otherwise weird state changes will be visible, when user is already signed in upon first render
 1. `null`: `app.auth().onAuthStateChanged(setUser)` has finished and found that user hasn't signed in yet
 1. `!null && !undefined`: `app.auth().onAuthStateChanged(setUser)` has finished and found that user has signed in successfully
